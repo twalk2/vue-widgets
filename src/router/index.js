@@ -14,6 +14,11 @@ const routes = [
     path: "/toggle",
     name: "toggle",
     component: () => import("../views/Toggle.vue")
+  },
+  {
+    path: "/peekaboo",
+    name: "peekaboo",
+    component: () => import("../views/Peekaboo.vue")
   }
 ];
 
