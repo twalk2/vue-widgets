@@ -1,7 +1,13 @@
 <template>
-  <div>
-    <div>Hello</div>
-    <button @click="toggle()">Toggle</button>
+  <div class="h-screen flex flex-col items-center justify-center">
+    <div class="text-5xl m-20" v-if="greeting">Hello</div>
+    <div class="text-5xl m-20" v-else>Goodbye</div>
+    <button
+      class="m-20 text-4xl bg-red-500 p-1 border-2 border-black rounded"
+      @click="toggle()"
+    >
+      Toggle
+    </button>
   </div>
 </template>
 
