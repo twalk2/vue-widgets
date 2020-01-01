@@ -1,7 +1,16 @@
 <template>
   <div class="flex flex-col items-center justify-center h-screen">
-    <div v-if="message">BOO!</div>
-    <button @click="boo">Click</button>
+    <div class="h-16 w-screen m-20 flex justify-center">
+      <div class="text-6xl" v-if="message">BOO!</div>
+    </div>
+    <div class="h-16 w-screen m-20 flex justify-center">
+      <button
+        class="text-4xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        @click="boo"
+      >
+        Click
+      </button>
+    </div>
   </div>
 </template>
 
