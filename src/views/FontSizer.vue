@@ -6,18 +6,13 @@
     <div class="flex m-20">
       <button
         class="m-20 text-4xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
-        @click="
-          {
-            {
-              `$size` + 10;
-            }
-          }
-        "
+        @click="decrement()"
       >
         Shrink
       </button>
       <button
         class="m-20 text-4xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        @click="increment()"
       >
         Grow
       </button>
@@ -31,6 +26,18 @@ export default {
     return {
       size: 20
     };
+  },
+  methods: {
+    increment: function() {
+      return (this.size += 10);
+    },
+    decrement: function() {
+      if (this.size === 10) {
+        console.log("the end");
+      } else {
+        return (this.size -= 10);
+      }
+    }
   }
 };
 </script>
