@@ -19,6 +19,11 @@ const routes = [
     path: "/peekaboo",
     name: "peekaboo",
     component: () => import("../views/Peekaboo.vue")
+  },
+  {
+    path: "/font-sizer",
+    name: "font-sizer",
+    component: () => import("../views/FontSizer.vue")
   }
 ];
 
