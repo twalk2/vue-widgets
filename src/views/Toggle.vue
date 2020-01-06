@@ -3,7 +3,7 @@
     <div class="text-6xl m-20">{{ greeting ? "Hello" : "Goodbye" }}</div>
     <!-- <div class="text-6xl m-20" v-else>Goodbye</div> -->
     <button
-      class="m-20 text-4xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+      class="m-20 text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
       @click="toggle()"
     >
       Toggle

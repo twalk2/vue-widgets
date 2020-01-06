@@ -5,7 +5,7 @@
     </div>
     <div class="h-16 w-screen m-20 flex justify-center">
       <button
-        class="text-4xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        class="text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
         @click="boo"
       >
         Click
@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      message: true
+      message: false
     };
   },
   methods: {
