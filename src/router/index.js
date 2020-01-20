@@ -24,6 +24,11 @@ const routes = [
     path: "/font-sizer",
     name: "font-sizer",
     component: () => import("../views/FontSizer.vue")
+  },
+  {
+    path: "/align",
+    name: "align",
+    component: () => import("../views/Align.vue")
   }
 ];
 

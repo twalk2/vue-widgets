@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link>|
       <router-link to="/toggle">Toggle</router-link>|
       <router-link to="/peekaboo">Peekaboo</router-link>|
-      <router-link to="/font-sizer">Font Sizer</router-link>
+      <router-link to="/font-sizer">Font Sizer</router-link>|
+      <router-link to="/align">Align</router-link>
     </div>
     <router-view />
   </div>
