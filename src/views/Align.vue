@@ -8,19 +8,19 @@
     </div>
     <div class="flex justify-around h-16 w-1/2">
       <button
-        class="text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        class="w-24 text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
         @click="left()"
       >
         Left
       </button>
       <button
-        class="text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        class="w-24 text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
         @click="center()"
       >
         Center
       </button>
       <button
-        class="text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        class="w-24 text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
         @click="right()"
       >
         Right
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     left() {
-      return (this.alignment = "left"), console.log(this.alignment);
+      return (this.alignment = "left");
     },
     center() {
       return (this.alignment = "center");
