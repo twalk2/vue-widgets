@@ -7,8 +7,18 @@
       {{ textColor }}
     </div>
     <div class="flex justify-around h-16 w-1/2">
-      <input class type="text" placeholder="Enter Color" v-model="newColor" />
-      <button @click="changeColor()">Change Color</button>
+      <input
+        class="text-3xl border-2 border-black rounded-lg"
+        type="text"
+        placeholder="Enter Color"
+        v-model="newColor"
+      />
+      <button
+        class="w-auto text-3xl bg-red-500 p-1 border-2 border-black rounded-lg outline-none"
+        @click="changeColor()"
+      >
+        Change Color
+      </button>
     </div>
   </div>
 </template>
@@ -26,7 +36,7 @@ export default {
       if (this.newColor !== "") {
         return (this.textColor = this.newColor);
       } else {
-        return "hello";
+        return "please enter a color";
       }
     }
   }
