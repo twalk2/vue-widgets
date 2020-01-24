@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <div v-bind:style="{ color: textColor }">{{ textColor }}</div>
-    <div>
-      <input type="text" placeholder="Enter Color" v-model="newColor" />
+  <div class="h-screen flex flex-col items-center">
+    <div
+      class="text-6xl w-screen m-56 flex justify-center"
+      v-bind:style="{ color: textColor }"
+    >
+      {{ textColor }}
+    </div>
+    <div class="flex justify-around h-16 w-1/2">
+      <input class type="text" placeholder="Enter Color" v-model="newColor" />
       <button @click="changeColor()">Change Color</button>
     </div>
   </div>
@@ -18,7 +23,11 @@ export default {
   },
   methods: {
     changeColor() {
-      return (this.textColor = this.newColor);
+      if (this.newColor !== "") {
+        return (this.textColor = this.newColor);
+      } else {
+        return "hello";
+      }
     }
   }
 };
