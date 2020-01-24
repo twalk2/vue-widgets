@@ -29,6 +29,11 @@ const routes = [
     path: "/align",
     name: "align",
     component: () => import("../views/Align.vue")
+  },
+  {
+    path: "/color",
+    name: "color",
+    component: () => import("../views/Color.vue")
   }
 ];
 
